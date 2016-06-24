@@ -24,7 +24,7 @@ struct __fb_addr_para
 	uintptr_t fb_paddr;
 	int fb_size;
 };
-extern struct  __fb_addr_para g_fb_addr;
+static struct  __fb_addr_para g_fb_addr;
 #if (LINUX_VERSION_CODE < KERNEL_VERSION(3,10,0)) && defined (CONFIG_SUNXI_THERMAL)
 extern int ths_read_data(int value);
 #endif /* (LINUX_VERSION_CODE < KERNEL_VERSION(3,10,0)) && defined (CONFIG_SUNXI_THERMAL) */
@@ -533,7 +533,7 @@ static struct attribute *gpu_attributes[] =
     NULL,
 };
 
-struct attribute_group gpu_attribute_group = 
+struct attribute_group gpu_attribute_group =
 {
 	.name = "dvfs",
 	.attrs = gpu_attributes,
