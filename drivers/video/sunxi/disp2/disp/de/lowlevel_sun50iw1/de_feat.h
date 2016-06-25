@@ -2,7 +2,7 @@
 #define _DE_FEAT_H_
 
 #define DE_NUM	2
-#define DEVICE_NUM	2
+#define DEVICE_NUM	1
 #define CHN_NUM		4
 #define VI_CHN_NUM	1
 #define UI_CHN_NUM	(CHN_NUM - VI_CHN_NUM)
